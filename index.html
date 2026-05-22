@@ -2,14 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MPL Trainee Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MPL Trainee Tracker | EAUPTS</title>
+    
+    <link rel="apple-touch-icon" href="https://ptsmpl.vercel.app/icon.png">
+    
+    
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe { border: none; width: 100%; height: 100%; }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            /* Ethiopian Airlines Theme Gradient */
+            background: linear-gradient(135deg, #006341 0%, #13294B 100%);
+        }
+        
+        /* Logo placed in the center of the background */
+        .background-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px; /* Adjust size as needed */
+            opacity: 0.3; /* Subtle watermark effect */
+            z-index: -1;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent; /* Allows gradient to show if frame is transparent */
+        }
     </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbwRmTfSfy8OUZVJjGQpPYT495Ntpi85fSzIpyP5Jm4tqd-Wgk73ACJ6A-saRGqspSLCTQ/exec"></iframe>
+     
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbwRmTfSfy8OUZVJjGQpPYT495Ntpi85fSzIpyP5Jm4tqd-Wgk73ACJ6A-saRGqspSLCTQ/exec" 
+        allow="geolocation; camera; microphone">
+    </iframe>
 </body>
 </html>
